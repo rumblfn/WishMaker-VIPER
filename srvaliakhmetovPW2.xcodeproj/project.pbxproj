@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		BB9FE4A62CD38FB700335638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FE4A52CD38FB700335638 /* AppDelegate.swift */; };
 		BB9FE4A82CD38FB700335638 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FE4A72CD38FB700335638 /* SceneDelegate.swift */; };
-		BB9FE4AA2CD38FB700335638 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FE4A92CD38FB700335638 /* ViewController.swift */; };
 		BB9FE4AD2CD38FB700335638 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB9FE4AC2CD38FB700335638 /* Base */; };
 		BB9FE4AF2CD38FB900335638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9FE4AE2CD38FB900335638 /* Assets.xcassets */; };
 		BB9FE4B22CD38FB900335638 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB9FE4B12CD38FB900335638 /* Base */; };
+		BBFCB7F52CD7BDEE0064A932 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BBFCB7E42CD7BDEE0064A932 /* README.md */; };
+		BBFCB7F62CD7BDEE0064A932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFCB7E52CD7BDEE0064A932 /* Assets.xcassets */; };
+		BBFCB7F72CD7BDEE0064A932 /* ViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7E62CD7BDEE0064A932 /* ViewPin.swift */; };
+		BBFCB7F82CD7BDEE0064A932 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7E82CD7BDEE0064A932 /* CustomSlider.swift */; };
+		BBFCB7F92CD7BDEE0064A932 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7E92CD7BDEE0064A932 /* ToggleButton.swift */; };
+		BBFCB7FA2CD7BDEE0064A932 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFCB7ED2CD7BDEE0064A932 /* LaunchScreen.storyboard */; };
+		BBFCB7FB2CD7BDEE0064A932 /* WishMakerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7EF2CD7BDEE0064A932 /* WishMakerInteractor.swift */; };
+		BBFCB7FC2CD7BDEE0064A932 /* WishMakerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7F02CD7BDEE0064A932 /* WishMakerPresenter.swift */; };
+		BBFCB7FD2CD7BDEE0064A932 /* WishMakerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7F12CD7BDEE0064A932 /* WishMakerRouter.swift */; };
+		BBFCB7FE2CD7BDEE0064A932 /* WishMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFCB7F22CD7BDEE0064A932 /* WishMakerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB9FE4A22CD38FB700335638 /* srvaliakhmetovPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = srvaliakhmetovPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9FE4A52CD38FB700335638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9FE4A72CD38FB700335638 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB9FE4A92CD38FB700335638 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB9FE4AC2CD38FB700335638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9FE4AE2CD38FB900335638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9FE4B12CD38FB900335638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB9FE4B32CD38FB900335638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFCB7E42CD7BDEE0064A932 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBFCB7E52CD7BDEE0064A932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBFCB7E62CD7BDEE0064A932 /* ViewPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPin.swift; sourceTree = "<group>"; };
+		BBFCB7E82CD7BDEE0064A932 /* CustomSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		BBFCB7E92CD7BDEE0064A932 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		BBFCB7EC2CD7BDEE0064A932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBFCB7EF2CD7BDEE0064A932 /* WishMakerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishMakerInteractor.swift; sourceTree = "<group>"; };
+		BBFCB7F02CD7BDEE0064A932 /* WishMakerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishMakerPresenter.swift; sourceTree = "<group>"; };
+		BBFCB7F12CD7BDEE0064A932 /* WishMakerRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishMakerRouter.swift; sourceTree = "<group>"; };
+		BBFCB7F22CD7BDEE0064A932 /* WishMakerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishMakerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +75,71 @@
 			isa = PBXGroup;
 			children = (
 				BB9FE4A52CD38FB700335638 /* AppDelegate.swift */,
+				BBFCB7E52CD7BDEE0064A932 /* Assets.xcassets */,
+				BBFCB7EE2CD7BDEE0064A932 /* Base.lproj */,
+				BBFCB7F42CD7BDEE0064A932 /* modules */,
+				BBFCB7E42CD7BDEE0064A932 /* README.md */,
+				BBFCB7EB2CD7BDEE0064A932 /* shared */,
 				BB9FE4A72CD38FB700335638 /* SceneDelegate.swift */,
-				BB9FE4A92CD38FB700335638 /* ViewController.swift */,
 				BB9FE4AB2CD38FB700335638 /* Main.storyboard */,
 				BB9FE4AE2CD38FB900335638 /* Assets.xcassets */,
 				BB9FE4B02CD38FB900335638 /* LaunchScreen.storyboard */,
 				BB9FE4B32CD38FB900335638 /* Info.plist */,
 			);
 			path = srvaliakhmetovPW2;
+			sourceTree = "<group>";
+		};
+		BBFCB7E72CD7BDEE0064A932 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBFCB7E62CD7BDEE0064A932 /* ViewPin.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		BBFCB7EA2CD7BDEE0064A932 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				BBFCB7E82CD7BDEE0064A932 /* CustomSlider.swift */,
+				BBFCB7E92CD7BDEE0064A932 /* ToggleButton.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		BBFCB7EB2CD7BDEE0064A932 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				BBFCB7E72CD7BDEE0064A932 /* extensions */,
+				BBFCB7EA2CD7BDEE0064A932 /* ui */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		BBFCB7EE2CD7BDEE0064A932 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BBFCB7ED2CD7BDEE0064A932 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		BBFCB7F32CD7BDEE0064A932 /* WishMakerModule */ = {
+			isa = PBXGroup;
+			children = (
+				BBFCB7EF2CD7BDEE0064A932 /* WishMakerInteractor.swift */,
+				BBFCB7F02CD7BDEE0064A932 /* WishMakerPresenter.swift */,
+				BBFCB7F12CD7BDEE0064A932 /* WishMakerRouter.swift */,
+				BBFCB7F22CD7BDEE0064A932 /* WishMakerView.swift */,
+			);
+			path = WishMakerModule;
+			sourceTree = "<group>";
+		};
+		BBFCB7F42CD7BDEE0064A932 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				BBFCB7F32CD7BDEE0064A932 /* WishMakerModule */,
+			);
+			path = modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +202,10 @@
 			files = (
 				BB9FE4AF2CD38FB900335638 /* Assets.xcassets in Resources */,
 				BB9FE4B22CD38FB900335638 /* Base in Resources */,
+				BBFCB7F52CD7BDEE0064A932 /* README.md in Resources */,
+				BBFCB7FA2CD7BDEE0064A932 /* LaunchScreen.storyboard in Resources */,
 				BB9FE4AD2CD38FB700335638 /* Base in Resources */,
+				BBFCB7F62CD7BDEE0064A932 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB9FE4AA2CD38FB700335638 /* ViewController.swift in Sources */,
+				BBFCB7FC2CD7BDEE0064A932 /* WishMakerPresenter.swift in Sources */,
 				BB9FE4A62CD38FB700335638 /* AppDelegate.swift in Sources */,
+				BBFCB7F92CD7BDEE0064A932 /* ToggleButton.swift in Sources */,
+				BBFCB7F72CD7BDEE0064A932 /* ViewPin.swift in Sources */,
+				BBFCB7FD2CD7BDEE0064A932 /* WishMakerRouter.swift in Sources */,
+				BBFCB7FE2CD7BDEE0064A932 /* WishMakerView.swift in Sources */,
 				BB9FE4A82CD38FB700335638 /* SceneDelegate.swift in Sources */,
+				BBFCB7FB2CD7BDEE0064A932 /* WishMakerInteractor.swift in Sources */,
+				BBFCB7F82CD7BDEE0064A932 /* CustomSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +243,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB9FE4B12CD38FB900335638 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BBFCB7ED2CD7BDEE0064A932 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFCB7EC2CD7BDEE0064A932 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
