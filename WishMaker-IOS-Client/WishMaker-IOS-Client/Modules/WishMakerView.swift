@@ -145,3 +145,4 @@ extension WishMakerViewController {
         stack.pinBottom(to: view, Constants.stackBottomMargin)
     }
 }
+

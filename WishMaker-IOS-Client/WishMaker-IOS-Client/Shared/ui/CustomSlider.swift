@@ -9,12 +9,12 @@ final class CustomSlider: UIView {
         static let backgroundColor: UIColor = .white
     }
     
-    var valueChanged: ((Double) -> Void)?
+    var valueChanged: (() -> Void)?
     
     var slider = UISlider()
     var titleView = UILabel()
     
-    init(title: String, min: Double, max: Double, defaultValue: Double = 0) {
+    init(title: String, _ min: Double, _ max: Double, _ defaultValue: Double = 0) {
         super.init(frame: .zero)
         titleView.text = title
         slider.minimumValue = Float(min)
@@ -52,6 +52,7 @@ final class CustomSlider: UIView {
     
     @objc
     private func sliderValueChanged() {
-        valueChanged?(Double(slider.value))
+        valueChanged?()
     }
 }
+

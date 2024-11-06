@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB1CDC542CDBE99D00D63AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC532CDBE99D00D63AC6 /* AppDelegate.swift */; };
+		BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC552CDBE99D00D63AC6 /* SceneDelegate.swift */; };
+		BB1CDC5D2CDBE99E00D63AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1CDC5C2CDBE99E00D63AC6 /* Assets.xcassets */; };
+		BB1CDC602CDBE99E00D63AC6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB1CDC5F2CDBE99E00D63AC6 /* Base */; };
+		BB1CDC692CDBF0E400D63AC6 /* WishMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC682CDBF0E400D63AC6 /* WishMakerView.swift */; };
+		BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC6C2CDBF14900D63AC6 /* ViewPin.swift */; };
+		BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */; };
+		BB1CDC722CDBF5EE00D63AC6 /* WishMakerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC712CDBF5EE00D63AC6 /* WishMakerPresenter.swift */; };
+		BB1CDC742CDBF68B00D63AC6 /* WishMakerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC732CDBF68B00D63AC6 /* WishMakerInteractor.swift */; };
+		BB1CDC762CDBF75200D63AC6 /* WishMakerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC752CDBF75200D63AC6 /* WishMakerRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB1CDC502CDBE99D00D63AC6 /* WishMaker-IOS-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WishMaker-IOS-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1CDC532CDBE99D00D63AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB1CDC552CDBE99D00D63AC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BB1CDC5C2CDBE99E00D63AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB1CDC5F2CDBE99E00D63AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB1CDC612CDBE99E00D63AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1CDC682CDBF0E400D63AC6 /* WishMakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerView.swift; sourceTree = "<group>"; };
+		BB1CDC6C2CDBF14900D63AC6 /* ViewPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPin.swift; sourceTree = "<group>"; };
+		BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		BB1CDC712CDBF5EE00D63AC6 /* WishMakerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerPresenter.swift; sourceTree = "<group>"; };
+		BB1CDC732CDBF68B00D63AC6 /* WishMakerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerInteractor.swift; sourceTree = "<group>"; };
+		BB1CDC752CDBF75200D63AC6 /* WishMakerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB1CDC4D2CDBE99D00D63AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB1CDC472CDBE99D00D63AC6 = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC522CDBE99D00D63AC6 /* WishMaker-IOS-Client */,
+				BB1CDC512CDBE99D00D63AC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB1CDC512CDBE99D00D63AC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC502CDBE99D00D63AC6 /* WishMaker-IOS-Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB1CDC522CDBE99D00D63AC6 /* WishMaker-IOS-Client */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC782CDC208B00D63AC6 /* Core */,
+				BB1CDC6A2CDBF12900D63AC6 /* Shared */,
+				BB1CDC672CDBF09C00D63AC6 /* Modules */,
+				BB1CDC5C2CDBE99E00D63AC6 /* Assets.xcassets */,
+				BB1CDC5E2CDBE99E00D63AC6 /* LaunchScreen.storyboard */,
+				BB1CDC612CDBE99E00D63AC6 /* Info.plist */,
+			);
+			path = "WishMaker-IOS-Client";
+			sourceTree = "<group>";
+		};
+		BB1CDC672CDBF09C00D63AC6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC682CDBF0E400D63AC6 /* WishMakerView.swift */,
+				BB1CDC712CDBF5EE00D63AC6 /* WishMakerPresenter.swift */,
+				BB1CDC732CDBF68B00D63AC6 /* WishMakerInteractor.swift */,
+				BB1CDC752CDBF75200D63AC6 /* WishMakerRouter.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BB1CDC6A2CDBF12900D63AC6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC6B2CDBF13000D63AC6 /* extensions */,
+				BB1CDC6E2CDBF37800D63AC6 /* ui */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BB1CDC6B2CDBF13000D63AC6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC6C2CDBF14900D63AC6 /* ViewPin.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		BB1CDC6E2CDBF37800D63AC6 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		BB1CDC782CDC208B00D63AC6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC532CDBE99D00D63AC6 /* AppDelegate.swift */,
+				BB1CDC552CDBE99D00D63AC6 /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB1CDC4F2CDBE99D00D63AC6 /* WishMaker-IOS-Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1CDC642CDBE99E00D63AC6 /* Build configuration list for PBXNativeTarget "WishMaker-IOS-Client" */;
+			buildPhases = (
+				BB1CDC4C2CDBE99D00D63AC6 /* Sources */,
+				BB1CDC4D2CDBE99D00D63AC6 /* Frameworks */,
+				BB1CDC4E2CDBE99D00D63AC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WishMaker-IOS-Client";
+			productName = "WishMaker-IOS-Client";
+			productReference = BB1CDC502CDBE99D00D63AC6 /* WishMaker-IOS-Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB1CDC482CDBE99D00D63AC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BB1CDC4F2CDBE99D00D63AC6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = BB1CDC4B2CDBE99D00D63AC6 /* Build configuration list for PBXProject "WishMaker-IOS-Client" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB1CDC472CDBE99D00D63AC6;
+			productRefGroup = BB1CDC512CDBE99D00D63AC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB1CDC4F2CDBE99D00D63AC6 /* WishMaker-IOS-Client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB1CDC4E2CDBE99D00D63AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1CDC5D2CDBE99E00D63AC6 /* Assets.xcassets in Resources */,
+				BB1CDC602CDBE99E00D63AC6 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB1CDC4C2CDBE99D00D63AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1CDC722CDBF5EE00D63AC6 /* WishMakerPresenter.swift in Sources */,
+				BB1CDC542CDBE99D00D63AC6 /* AppDelegate.swift in Sources */,
+				BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */,
+				BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */,
+				BB1CDC762CDBF75200D63AC6 /* WishMakerRouter.swift in Sources */,
+				BB1CDC742CDBF68B00D63AC6 /* WishMakerInteractor.swift in Sources */,
+				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
+				BB1CDC692CDBF0E400D63AC6 /* WishMakerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB1CDC5E2CDBE99E00D63AC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1CDC5F2CDBE99E00D63AC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB1CDC622CDBE99E00D63AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB1CDC632CDBE99E00D63AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB1CDC652CDBE99E00D63AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WishMaker-IOS-Client/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.hse.valiakhmetov.apps.WishMaker-IOS-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB1CDC662CDBE99E00D63AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WishMaker-IOS-Client/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.hse.valiakhmetov.apps.WishMaker-IOS-Client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB1CDC4B2CDBE99D00D63AC6 /* Build configuration list for PBXProject "WishMaker-IOS-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1CDC622CDBE99E00D63AC6 /* Debug */,
+				BB1CDC632CDBE99E00D63AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1CDC642CDBE99E00D63AC6 /* Build configuration list for PBXNativeTarget "WishMaker-IOS-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1CDC652CDBE99E00D63AC6 /* Debug */,
+				BB1CDC662CDBE99E00D63AC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB1CDC482CDBE99D00D63AC6 /* Project object */;
+}

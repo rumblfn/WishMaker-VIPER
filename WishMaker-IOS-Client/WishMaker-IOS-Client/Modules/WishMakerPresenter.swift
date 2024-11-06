@@ -23,3 +23,4 @@ final class WishMakerPresenter: WishMakerPresenterProtocol {
         view?.updateBackgroundColor(with: color)
     }
 }
+
