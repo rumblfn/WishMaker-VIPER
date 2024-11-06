@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BB9FE4A62CD38FB700335638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FE4A52CD38FB700335638 /* AppDelegate.swift */; };
 		BB9FE4A82CD38FB700335638 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9FE4A72CD38FB700335638 /* SceneDelegate.swift */; };
-		BB9FE4AD2CD38FB700335638 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB9FE4AC2CD38FB700335638 /* Base */; };
 		BB9FE4AF2CD38FB900335638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9FE4AE2CD38FB900335638 /* Assets.xcassets */; };
 		BB9FE4B22CD38FB900335638 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB9FE4B12CD38FB900335638 /* Base */; };
 		BBFCB7F52CD7BDEE0064A932 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BBFCB7E42CD7BDEE0064A932 /* README.md */; };
@@ -28,7 +27,6 @@
 		BB9FE4A22CD38FB700335638 /* srvaliakhmetovPW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = srvaliakhmetovPW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9FE4A52CD38FB700335638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9FE4A72CD38FB700335638 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB9FE4AC2CD38FB700335638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9FE4AE2CD38FB900335638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9FE4B12CD38FB900335638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB9FE4B32CD38FB900335638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,17 +72,16 @@
 		BB9FE4A42CD38FB700335638 /* srvaliakhmetovPW2 */ = {
 			isa = PBXGroup;
 			children = (
-				BB9FE4A52CD38FB700335638 /* AppDelegate.swift */,
-				BBFCB7E52CD7BDEE0064A932 /* Assets.xcassets */,
 				BBFCB7EE2CD7BDEE0064A932 /* Base.lproj */,
 				BBFCB7F42CD7BDEE0064A932 /* modules */,
-				BBFCB7E42CD7BDEE0064A932 /* README.md */,
 				BBFCB7EB2CD7BDEE0064A932 /* shared */,
 				BB9FE4A72CD38FB700335638 /* SceneDelegate.swift */,
-				BB9FE4AB2CD38FB700335638 /* Main.storyboard */,
-				BB9FE4AE2CD38FB900335638 /* Assets.xcassets */,
+				BB9FE4A52CD38FB700335638 /* AppDelegate.swift */,
 				BB9FE4B02CD38FB900335638 /* LaunchScreen.storyboard */,
+				BBFCB7E52CD7BDEE0064A932 /* Assets.xcassets */,
+				BB9FE4AE2CD38FB900335638 /* Assets.xcassets */,
 				BB9FE4B32CD38FB900335638 /* Info.plist */,
+				BBFCB7E42CD7BDEE0064A932 /* README.md */,
 			);
 			path = srvaliakhmetovPW2;
 			sourceTree = "<group>";
@@ -204,7 +201,6 @@
 				BB9FE4B22CD38FB900335638 /* Base in Resources */,
 				BBFCB7F52CD7BDEE0064A932 /* README.md in Resources */,
 				BBFCB7FA2CD7BDEE0064A932 /* LaunchScreen.storyboard in Resources */,
-				BB9FE4AD2CD38FB700335638 /* Base in Resources */,
 				BBFCB7F62CD7BDEE0064A932 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BB9FE4AB2CD38FB700335638 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BB9FE4AC2CD38FB700335638 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BB9FE4B02CD38FB900335638 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
