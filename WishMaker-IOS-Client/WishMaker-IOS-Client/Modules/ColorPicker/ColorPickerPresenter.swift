@@ -2,6 +2,7 @@ import UIKit
 
 protocol ColorPickerPresenterProtocol: AnyObject {
     func viewDidLoad()
+    func didChangeButtons(_ buttonsForValues: [ColorPickerMenu])
     func didChangeColor(_ color: UIColor)
     func sliderValueChanged(red: Float, green: Float, blue: Float, alpha: Float)
 }
@@ -13,6 +14,11 @@ final class ColorPickerPresenter: ColorPickerPresenterProtocol {
     
     func viewDidLoad() {
         interactor?.initColor()
+        interactor?.initButtons()
+    }
+    
+    func didChangeButtons(_ buttonsForValues: [ColorPickerMenu]) {
+        
     }
     
     func sliderValueChanged(red: Float, green: Float, blue: Float, alpha: Float) {

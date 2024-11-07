@@ -34,7 +34,7 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     
     private var titleView: UILabel!
     private var descriptionView: UILabel!
-    private var buttonView: UIButton!
+    private var togglePickerButtons: [ToggleButton<ColorPickerMenu>]!
     private var sliderRed: CustomSlider!
     private var sliderGreen: CustomSlider!
     private var sliderBlue: CustomSlider!
@@ -53,7 +53,7 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
-    
+        
         color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
         sliderRed.slider.value = Float(red)
         sliderGreen.slider.value = Float(green)
@@ -69,13 +69,17 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
             alpha: sliderAlpha.slider.value
         )
     }
+    
+    private func updateColorPickers(_ value: ColorPickerMenu) {
+        
+    }
 }
 
 extension ColorPickerViewController {
     private func configureUI() {
         configureTitle()
         configureDescription()
-        configureButton()
+        configureButtons()
         configureSliders()
     }
     
@@ -107,20 +111,35 @@ extension ColorPickerViewController {
         descriptionView.pinTop(to: titleView.bottomAnchor, Constants.descriptionTopMargin)
     }
     
-    private func configureButton() {
-        buttonView = UIButton(type: .system)
-        buttonView.translatesAutoresizingMaskIntoConstraints = false
-        buttonView.setTitle(Constants.buttonHideText, for: .normal)
-        buttonView.setTitleColor(.black, for: .normal)
-        buttonView.backgroundColor = .white
-        buttonView.layer.cornerRadius = 8
-        buttonView.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+    private func configureButtons() {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(scrollView)
         
-        buttonView.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        let buttonsStack = UIStackView()
+        buttonsStack.translatesAutoresizingMaskIntoConstraints = false
+        buttonsStack.axis = .horizontal
+        buttonsStack.distribution = .fillProportionally
+        buttonsStack.spacing = 10
+        scrollView.addSubview(buttonsStack)
         
-        view.addSubview(buttonView)
+        scrollView.contentSize = CGSize(width: buttonsStack.frame.size.width, height: buttonsStack.frame.size.height)
         
-        buttonView.pinCenter(to: view)
+        togglePickerButtons = [
+            ToggleButton(name: "Sliders", valueFor: ColorPickerMenu.slider)
+        ]
+        
+        for button in togglePickerButtons {
+            buttonsStack.addArrangedSubview(button)
+            button.onClick = updateColorPickers
+        }
+        
+        view.addSubview(buttonsStack)
+        
+        scrollView.pinLeft(to: view, Constants.titleLeadingMargin)
+        scrollView.pinTop(to: descriptionView.bottomAnchor, Constants.descriptionTopMargin)
+        
+        buttonsStack.pin(to: scrollView)
     }
     
     private func configureSliders() {
@@ -128,6 +147,7 @@ extension ColorPickerViewController {
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
         view.addSubview(stack)
+        
         stack.layer.cornerRadius = Constants.stackCornerRadius
         stack.clipsToBounds = true
         
