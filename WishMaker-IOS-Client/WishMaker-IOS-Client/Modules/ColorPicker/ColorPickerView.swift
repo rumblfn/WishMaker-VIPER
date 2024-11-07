@@ -2,6 +2,7 @@ import UIKit
 
 protocol ColorPickerViewProtocol: AnyObject {
     func updateBackgroundColor(with color: UIColor)
+    func updateColorPickers(_ value: [ColorPickerMenu: Bool])
 }
 
 final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol {
@@ -34,7 +35,9 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     
     private var titleView: UILabel!
     private var descriptionView: UILabel!
-    private var togglePickerButtons: [ToggleButton<ColorPickerMenu>]!
+    private var togglePickerButtons: [ToggleButton<ColorPickerMenu>: UIView]!
+    
+    private var slidersStack: UIStackView!
     private var sliderRed: CustomSlider!
     private var sliderGreen: CustomSlider!
     private var sliderBlue: CustomSlider!
@@ -61,6 +64,14 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         sliderAlpha.slider.value = Float(alpha)
     }
     
+    func updateColorPickers(_ state: [ColorPickerMenu: Bool]) {
+        for (button, linkedView) in togglePickerButtons {
+            let newValue = state[button.valueFor] ?? false
+            button.clicked = newValue
+            linkedView.isHidden = !newValue
+        }
+    }
+    
     private func sliderValueChanged() {
         presenter?.sliderValueChanged(
             red: sliderRed.slider.value,
@@ -70,8 +81,8 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         )
     }
     
-    private func updateColorPickers(_ value: ColorPickerMenu) {
-        
+    private func pickerButtonClicked(_ value: ColorPickerMenu) {
+        presenter?.pickerButtonClicked(pickerType: value)
     }
 }
 
@@ -79,8 +90,8 @@ extension ColorPickerViewController {
     private func configureUI() {
         configureTitle()
         configureDescription()
-        configureButtons()
         configureSliders()
+        configureButtons()
     }
     
     private func configureTitle() {
@@ -126,12 +137,12 @@ extension ColorPickerViewController {
         scrollView.contentSize = CGSize(width: buttonsStack.frame.size.width, height: buttonsStack.frame.size.height)
         
         togglePickerButtons = [
-            ToggleButton(name: "Sliders", valueFor: ColorPickerMenu.slider)
+            ToggleButton(name: "Sliders", valueFor: ColorPickerMenu.sliders): slidersStack
         ]
         
-        for button in togglePickerButtons {
+        for (button, _) in togglePickerButtons {
             buttonsStack.addArrangedSubview(button)
-            button.onClick = updateColorPickers
+            button.onClick = pickerButtonClicked
         }
         
         view.addSubview(buttonsStack)
@@ -143,13 +154,13 @@ extension ColorPickerViewController {
     }
     
     private func configureSliders() {
-        let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.axis = .vertical
-        view.addSubview(stack)
+        slidersStack = UIStackView()
+        slidersStack.translatesAutoresizingMaskIntoConstraints = false
+        slidersStack.axis = .vertical
+        view.addSubview(slidersStack)
         
-        stack.layer.cornerRadius = Constants.stackCornerRadius
-        stack.clipsToBounds = true
+        slidersStack.layer.cornerRadius = Constants.stackCornerRadius
+        slidersStack.clipsToBounds = true
         
         let sliders = [
             CustomSlider(title: Constants.redSliderText, Constants.sliderMin, Constants.sliderMax),
@@ -164,13 +175,13 @@ extension ColorPickerViewController {
         sliderAlpha = sliders[3]
         
         for slider in sliders {
-            stack.addArrangedSubview(slider)
+            slidersStack.addArrangedSubview(slider)
             slider.valueChanged = sliderValueChanged
         }
         
-        stack.pinCenterX(to: view)
-        stack.pinLeft(to: view, Constants.stackLeadingMargin)
-        stack.pinBottom(to: view, Constants.stackBottomMargin)
+        slidersStack.pinCenterX(to: view)
+        slidersStack.pinLeft(to: view, Constants.stackLeadingMargin)
+        slidersStack.pinBottom(to: view, Constants.stackBottomMargin)
     }
 }
 

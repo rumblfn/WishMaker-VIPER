@@ -9,6 +9,24 @@ final class ToggleButton<T>: UIView {
     
     var button = UIButton(type: .system)
     
+    private var _clicked: Bool = false
+    var clicked: Bool {
+        get {
+            return _clicked
+        }
+        set(newState) {
+            if newState {
+                button.setTitle(onTitle, for: .normal)
+                button.backgroundColor = .systemGreen
+            } else {
+                button.setTitle(offTitle, for: .normal)
+                button.backgroundColor = .systemGray
+            }
+            
+            _clicked = newState
+        }
+    }
+    
     init(name: String, valueFor: T) {
         self.onTitle += name
         self.offTitle += name

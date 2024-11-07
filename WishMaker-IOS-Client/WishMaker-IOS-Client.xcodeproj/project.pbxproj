@@ -19,7 +19,7 @@
 		BB1CDC762CDBF75200D63AC6 /* ColorPickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC752CDBF75200D63AC6 /* ColorPickerRouter.swift */; };
 		BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */; };
 		BB1CDC7E2CDCD66E00D63AC6 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */; };
-		BB1CDC812CDCE6CB00D63AC6 /* ColorPickerMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC802CDCE6CB00D63AC6 /* ColorPickerMenus.swift */; };
+		BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		BB1CDC752CDBF75200D63AC6 /* ColorPickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerRouter.swift; sourceTree = "<group>"; };
 		BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
-		BB1CDC802CDCE6CB00D63AC6 /* ColorPickerMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerMenus.swift; sourceTree = "<group>"; };
+		BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickersConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */,
-				BB1CDC802CDCE6CB00D63AC6 /* ColorPickerMenus.swift */,
+				BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 				BB1CDC542CDBE99D00D63AC6 /* AppDelegate.swift in Sources */,
 				BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */,
 				BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */,
-				BB1CDC812CDCE6CB00D63AC6 /* ColorPickerMenus.swift in Sources */,
+				BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */,
 				BB1CDC762CDBF75200D63AC6 /* ColorPickerRouter.swift in Sources */,
 				BB1CDC742CDBF68B00D63AC6 /* ColorPickerInteractor.swift in Sources */,
 				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
