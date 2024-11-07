@@ -1,12 +1,11 @@
 import UIKit
 
-protocol WishMakerViewProtocol: AnyObject {
+protocol ColorPickerViewProtocol: AnyObject {
     func updateBackgroundColor(with color: UIColor)
 }
 
-final class WishMakerViewController: UIViewController, WishMakerViewProtocol {
+final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol {
     enum Constants {
-        static let backgroundColor: UIColor = .systemPink
         static let titleFontSize: CGFloat = 32
         static let titleTopMargin: CGFloat = 30
         static let titleLeadingMargin: CGFloat = 20
@@ -17,7 +16,7 @@ final class WishMakerViewController: UIViewController, WishMakerViewProtocol {
         static let stackLeadingMargin: CGFloat = 20
         static let stackCornerRadius: CGFloat = 20
         
-        static let titleText: String = "WishMaker"
+        static let titleText: String = "ColorPicker"
         static let descriptionText: String = "Move the sliders and observe the changes."
         
         static let buttonShowText: String = "show sliders"
@@ -31,7 +30,7 @@ final class WishMakerViewController: UIViewController, WishMakerViewProtocol {
         static let alphaSliderText: String = "Alpha"
     }
     
-    var presenter: WishMakerPresenterProtocol?
+    var presenter: ColorPickerPresenterProtocol?
     
     private var titleView: UILabel!
     private var descriptionView: UILabel!
@@ -45,11 +44,21 @@ final class WishMakerViewController: UIViewController, WishMakerViewProtocol {
         super.viewDidLoad()
         configureUI()
         presenter?.viewDidLoad()
-        sliderValueChanged()
     }
     
     func updateBackgroundColor(with color: UIColor) {
         view.backgroundColor = color
+        
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+    
+        color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        sliderRed.slider.value = Float(red)
+        sliderGreen.slider.value = Float(green)
+        sliderBlue.slider.value = Float(blue)
+        sliderAlpha.slider.value = Float(alpha)
     }
     
     private func sliderValueChanged() {
@@ -62,9 +71,8 @@ final class WishMakerViewController: UIViewController, WishMakerViewProtocol {
     }
 }
 
-extension WishMakerViewController {
+extension ColorPickerViewController {
     private func configureUI() {
-        view.backgroundColor = Constants.backgroundColor
         configureTitle()
         configureDescription()
         configureButton()

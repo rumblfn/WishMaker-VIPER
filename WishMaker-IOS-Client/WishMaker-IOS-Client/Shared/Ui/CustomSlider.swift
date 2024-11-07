@@ -14,7 +14,7 @@ final class CustomSlider: UIView {
     var slider = UISlider()
     var titleView = UILabel()
     
-    init(title: String, _ min: Double, _ max: Double, _ defaultValue: Double = 0) {
+    init(title: String, _ min: Double = 0.0, _ max: Double = 1.0, _ defaultValue: Double = 0) {
         super.init(frame: .zero)
         titleView.text = title
         slider.minimumValue = Float(min)
@@ -38,16 +38,14 @@ final class CustomSlider: UIView {
             view.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        NSLayoutConstraint.activate([
-            titleView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleView.topAnchor.constraint(equalTo: topAnchor, constant: Constants.titleTopMargin),
-            titleView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.titleLeadingMargin),
-            
-            slider.topAnchor.constraint(equalTo: titleView.bottomAnchor),
-            slider.centerXAnchor.constraint(equalTo: centerXAnchor),
-            slider.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Constants.sliderBottomMargin),
-            slider.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.sliderLeadingMargin)
-        ])
+        titleView.pinCenterX(to: centerXAnchor)
+        titleView.pinTop(to: topAnchor, Constants.titleTopMargin)
+        titleView.pinLeft(to: leadingAnchor, Constants.titleLeadingMargin)
+        
+        slider.pinTop(to: titleView.bottomAnchor)
+        slider.pinCenterX(to: centerXAnchor)
+        slider.pinBottom(to: bottomAnchor, Constants.sliderBottomMargin)
+        slider.pinLeft(to: leadingAnchor, Constants.sliderLeadingMargin)
     }
     
     @objc

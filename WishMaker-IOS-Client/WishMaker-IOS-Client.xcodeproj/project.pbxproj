@@ -11,12 +11,13 @@
 		BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC552CDBE99D00D63AC6 /* SceneDelegate.swift */; };
 		BB1CDC5D2CDBE99E00D63AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1CDC5C2CDBE99E00D63AC6 /* Assets.xcassets */; };
 		BB1CDC602CDBE99E00D63AC6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BB1CDC5F2CDBE99E00D63AC6 /* Base */; };
-		BB1CDC692CDBF0E400D63AC6 /* WishMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC682CDBF0E400D63AC6 /* WishMakerView.swift */; };
+		BB1CDC692CDBF0E400D63AC6 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC682CDBF0E400D63AC6 /* ColorPickerView.swift */; };
 		BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC6C2CDBF14900D63AC6 /* ViewPin.swift */; };
 		BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */; };
-		BB1CDC722CDBF5EE00D63AC6 /* WishMakerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC712CDBF5EE00D63AC6 /* WishMakerPresenter.swift */; };
-		BB1CDC742CDBF68B00D63AC6 /* WishMakerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC732CDBF68B00D63AC6 /* WishMakerInteractor.swift */; };
-		BB1CDC762CDBF75200D63AC6 /* WishMakerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC752CDBF75200D63AC6 /* WishMakerRouter.swift */; };
+		BB1CDC722CDBF5EE00D63AC6 /* ColorPickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC712CDBF5EE00D63AC6 /* ColorPickerPresenter.swift */; };
+		BB1CDC742CDBF68B00D63AC6 /* ColorPickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC732CDBF68B00D63AC6 /* ColorPickerInteractor.swift */; };
+		BB1CDC762CDBF75200D63AC6 /* ColorPickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC752CDBF75200D63AC6 /* ColorPickerRouter.swift */; };
+		BB1CDC7C2CDCB33000D63AC6 /* ColorPickerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7B2CDCB33000D63AC6 /* ColorPickerEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +27,13 @@
 		BB1CDC5C2CDBE99E00D63AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB1CDC5F2CDBE99E00D63AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB1CDC612CDBE99E00D63AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB1CDC682CDBF0E400D63AC6 /* WishMakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerView.swift; sourceTree = "<group>"; };
+		BB1CDC682CDBF0E400D63AC6 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		BB1CDC6C2CDBF14900D63AC6 /* ViewPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPin.swift; sourceTree = "<group>"; };
 		BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
-		BB1CDC712CDBF5EE00D63AC6 /* WishMakerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerPresenter.swift; sourceTree = "<group>"; };
-		BB1CDC732CDBF68B00D63AC6 /* WishMakerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerInteractor.swift; sourceTree = "<group>"; };
-		BB1CDC752CDBF75200D63AC6 /* WishMakerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerRouter.swift; sourceTree = "<group>"; };
+		BB1CDC712CDBF5EE00D63AC6 /* ColorPickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerPresenter.swift; sourceTree = "<group>"; };
+		BB1CDC732CDBF68B00D63AC6 /* ColorPickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerInteractor.swift; sourceTree = "<group>"; };
+		BB1CDC752CDBF75200D63AC6 /* ColorPickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerRouter.swift; sourceTree = "<group>"; };
+		BB1CDC7B2CDCB33000D63AC6 /* ColorPickerEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,8 @@
 		BB1CDC672CDBF09C00D63AC6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BB1CDC682CDBF0E400D63AC6 /* WishMakerView.swift */,
-				BB1CDC712CDBF5EE00D63AC6 /* WishMakerPresenter.swift */,
-				BB1CDC732CDBF68B00D63AC6 /* WishMakerInteractor.swift */,
-				BB1CDC752CDBF75200D63AC6 /* WishMakerRouter.swift */,
+				BB1CDC7A2CDC23F200D63AC6 /* NavBar */,
+				BB1CDC792CDC23B300D63AC6 /* ColorPicker */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -88,26 +88,26 @@
 		BB1CDC6A2CDBF12900D63AC6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BB1CDC6B2CDBF13000D63AC6 /* extensions */,
-				BB1CDC6E2CDBF37800D63AC6 /* ui */,
+				BB1CDC6B2CDBF13000D63AC6 /* Extensions */,
+				BB1CDC6E2CDBF37800D63AC6 /* Ui */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		BB1CDC6B2CDBF13000D63AC6 /* extensions */ = {
+		BB1CDC6B2CDBF13000D63AC6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				BB1CDC6C2CDBF14900D63AC6 /* ViewPin.swift */,
 			);
-			path = extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		BB1CDC6E2CDBF37800D63AC6 /* ui */ = {
+		BB1CDC6E2CDBF37800D63AC6 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
 				BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */,
 			);
-			path = ui;
+			path = Ui;
 			sourceTree = "<group>";
 		};
 		BB1CDC782CDC208B00D63AC6 /* Core */ = {
@@ -117,6 +117,25 @@
 				BB1CDC552CDBE99D00D63AC6 /* SceneDelegate.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		BB1CDC792CDC23B300D63AC6 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BB1CDC682CDBF0E400D63AC6 /* ColorPickerView.swift */,
+				BB1CDC712CDBF5EE00D63AC6 /* ColorPickerPresenter.swift */,
+				BB1CDC732CDBF68B00D63AC6 /* ColorPickerInteractor.swift */,
+				BB1CDC752CDBF75200D63AC6 /* ColorPickerRouter.swift */,
+				BB1CDC7B2CDCB33000D63AC6 /* ColorPickerEntity.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		BB1CDC7A2CDC23F200D63AC6 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,14 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1CDC722CDBF5EE00D63AC6 /* WishMakerPresenter.swift in Sources */,
+				BB1CDC722CDBF5EE00D63AC6 /* ColorPickerPresenter.swift in Sources */,
 				BB1CDC542CDBE99D00D63AC6 /* AppDelegate.swift in Sources */,
 				BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */,
 				BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */,
-				BB1CDC762CDBF75200D63AC6 /* WishMakerRouter.swift in Sources */,
-				BB1CDC742CDBF68B00D63AC6 /* WishMakerInteractor.swift in Sources */,
+				BB1CDC762CDBF75200D63AC6 /* ColorPickerRouter.swift in Sources */,
+				BB1CDC742CDBF68B00D63AC6 /* ColorPickerInteractor.swift in Sources */,
 				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
-				BB1CDC692CDBF0E400D63AC6 /* WishMakerView.swift in Sources */,
+				BB1CDC692CDBF0E400D63AC6 /* ColorPickerView.swift in Sources */,
+				BB1CDC7C2CDCB33000D63AC6 /* ColorPickerEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

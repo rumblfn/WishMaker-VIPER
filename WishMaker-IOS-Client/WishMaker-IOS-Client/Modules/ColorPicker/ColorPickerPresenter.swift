@@ -1,18 +1,18 @@
 import UIKit
 
-protocol WishMakerPresenterProtocol: AnyObject {
+protocol ColorPickerPresenterProtocol: AnyObject {
     func viewDidLoad()
     func didChangeColor(_ color: UIColor)
     func sliderValueChanged(red: Float, green: Float, blue: Float, alpha: Float)
 }
 
-final class WishMakerPresenter: WishMakerPresenterProtocol {
-    weak var view: WishMakerViewProtocol?
-    var interactor: WishMakerInteractorProtocol?
-    var router: WishMakerRouterProtocol?
+final class ColorPickerPresenter: ColorPickerPresenterProtocol {
+    weak var view: ColorPickerViewProtocol?
+    var interactor: ColorPickerInteractorProtocol?
+    var router: ColorPickerRouterProtocol?
     
     func viewDidLoad() {
-        
+        interactor?.initColor()
     }
     
     func sliderValueChanged(red: Float, green: Float, blue: Float, alpha: Float) {
