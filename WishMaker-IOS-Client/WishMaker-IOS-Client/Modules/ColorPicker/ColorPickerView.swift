@@ -13,7 +13,7 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         static let descriptionFontSize: CGFloat = 20
         static let descriptionTopMargin: CGFloat = 20
         static let descriptionTextColor: UIColor = UIColor(red: 0, green: 0.04, blue: 0.34, alpha: 1)
-        static let stackBottomMargin: CGFloat = 40
+        static let stackBottomMargin: CGFloat = 20
         static let stackLeadingMargin: CGFloat = 20
         static let stackCornerRadius: CGFloat = 20
         
@@ -29,6 +29,12 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         static let greenSliderText: String = "Green"
         static let blueSliderText: String = "Blue"
         static let alphaSliderText: String = "Alpha"
+        
+        static let buttonHeight: CGFloat = 60
+        static let buttonBottom: CGFloat = 40
+        static let buttonSide: CGFloat = 20
+        static let buttonText: String = "Add wish"
+        static let buttonRadius: CGFloat = 20
     }
     
     var presenter: ColorPickerPresenterProtocol?
@@ -42,6 +48,8 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     private var sliderGreen: CustomSlider!
     private var sliderBlue: CustomSlider!
     private var sliderAlpha: CustomSlider!
+    
+    private let addWishButton: UIButton = UIButton(type: .system)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,12 +92,18 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     private func pickerButtonClicked(_ value: ColorPickerMenu) {
         presenter?.pickerButtonClicked(pickerType: value)
     }
+    
+    @objc
+    private func addWishButtonPressed() {
+        // TODO: write some logic here
+    }
 }
 
 extension ColorPickerViewController {
     private func configureUI() {
         configureTitle()
         configureDescription()
+        configureAddWishButton()
         configureSliders()
         configureButtons()
     }
@@ -153,6 +167,20 @@ extension ColorPickerViewController {
         buttonsStack.pin(to: scrollView)
     }
     
+    private func configureAddWishButton() {
+        view.addSubview(addWishButton)
+        addWishButton.setHeight(Constants.buttonHeight)
+        addWishButton.pinBottom(to: view, Constants.buttonBottom)
+        addWishButton.pinHorizontal(to: view, Constants.buttonSide)
+        
+        addWishButton.backgroundColor = .white
+        addWishButton.setTitleColor(.systemPink, for: .normal)
+        addWishButton.setTitle(Constants.buttonText, for: .normal)
+
+        addWishButton.layer.cornerRadius = Constants.buttonRadius
+        addWishButton.addTarget(self, action: #selector(addWishButtonPressed), for: .touchUpInside)
+    }
+    
     private func configureSliders() {
         slidersStack = UIStackView()
         slidersStack.translatesAutoresizingMaskIntoConstraints = false
@@ -181,7 +209,7 @@ extension ColorPickerViewController {
         
         slidersStack.pinCenterX(to: view)
         slidersStack.pinLeft(to: view, Constants.stackLeadingMargin)
-        slidersStack.pinBottom(to: view, Constants.stackBottomMargin)
+        slidersStack.pinBottom(to: addWishButton.topAnchor, Constants.stackBottomMargin)
     }
 }
 
