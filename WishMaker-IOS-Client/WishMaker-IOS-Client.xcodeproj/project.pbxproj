@@ -20,6 +20,8 @@
 		BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */; };
 		BB1CDC7E2CDCD66E00D63AC6 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */; };
 		BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */; };
+		BBDEF1332CFFBF310095D825 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */; };
+		BBDEF1352CFFCC540095D825 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickersConfiguration.swift; sourceTree = "<group>"; };
+		BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
+		BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			children = (
 				BB1CDC7A2CDC23F200D63AC6 /* NavBar */,
 				BB1CDC792CDC23B300D63AC6 /* ColorPicker */,
+				BBDEF1312CFFBEF90095D825 /* WishStoring */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			children = (
 				BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */,
 				BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */,
+				BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -150,6 +156,14 @@
 				BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		BBDEF1312CFFBEF90095D825 /* WishStoring */ = {
+			isa = PBXGroup;
+			children = (
+				BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */,
+			);
+			path = WishStoring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,11 +242,13 @@
 				BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */,
 				BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */,
 				BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */,
+				BBDEF1332CFFBF310095D825 /* WishStoringViewController.swift in Sources */,
 				BB1CDC762CDBF75200D63AC6 /* ColorPickerRouter.swift in Sources */,
 				BB1CDC742CDBF68B00D63AC6 /* ColorPickerInteractor.swift in Sources */,
 				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
 				BB1CDC692CDBF0E400D63AC6 /* ColorPickerView.swift in Sources */,
 				BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */,
+				BBDEF1352CFFCC540095D825 /* WrittenWishCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

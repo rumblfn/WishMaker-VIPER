@@ -95,7 +95,7 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     
     @objc
     private func addWishButtonPressed() {
-        // TODO: write some logic here
+        present(WishStoringViewController(), animated: true)
     }
 }
 
