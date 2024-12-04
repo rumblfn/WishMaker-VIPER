@@ -20,9 +20,13 @@
 		BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */; };
 		BB1CDC7E2CDCD66E00D63AC6 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */; };
 		BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */; };
-		BBDEF1332CFFBF310095D825 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */; };
+		BBDEF1332CFFBF310095D825 /* WishStoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1322CFFBF310095D825 /* WishStoringView.swift */; };
 		BBDEF1352CFFCC540095D825 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */; };
 		BBDEF1372CFFE2210095D825 /* AddWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1362CFFE2210095D825 /* AddWishCell.swift */; };
+		BBE065AB2D011B2700B1AD9E /* WishStoringPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065AA2D011B2700B1AD9E /* WishStoringPresenter.swift */; };
+		BBE065AD2D011B4900B1AD9E /* WishStoringInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065AC2D011B4900B1AD9E /* WishStoringInteractor.swift */; };
+		BBE065AF2D011BA200B1AD9E /* WishStoringRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065AE2D011BA200B1AD9E /* WishStoringRouter.swift */; };
+		BBE065B12D011BCF00B1AD9E /* WishEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065B02D011BCF00B1AD9E /* WishEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +45,13 @@
 		BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickersConfiguration.swift; sourceTree = "<group>"; };
-		BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
+		BBDEF1322CFFBF310095D825 /* WishStoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringView.swift; sourceTree = "<group>"; };
 		BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
 		BBDEF1362CFFE2210095D825 /* AddWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishCell.swift; sourceTree = "<group>"; };
+		BBE065AA2D011B2700B1AD9E /* WishStoringPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringPresenter.swift; sourceTree = "<group>"; };
+		BBE065AC2D011B4900B1AD9E /* WishStoringInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringInteractor.swift; sourceTree = "<group>"; };
+		BBE065AE2D011BA200B1AD9E /* WishStoringRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringRouter.swift; sourceTree = "<group>"; };
+		BBE065B02D011BCF00B1AD9E /* WishEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +172,11 @@
 		BBDEF1312CFFBEF90095D825 /* WishStoring */ = {
 			isa = PBXGroup;
 			children = (
-				BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */,
+				BBDEF1322CFFBF310095D825 /* WishStoringView.swift */,
+				BBE065AA2D011B2700B1AD9E /* WishStoringPresenter.swift */,
+				BBE065AC2D011B4900B1AD9E /* WishStoringInteractor.swift */,
+				BBE065AE2D011BA200B1AD9E /* WishStoringRouter.swift */,
+				BBE065B02D011BCF00B1AD9E /* WishEntity.swift */,
 			);
 			path = WishStoring;
 			sourceTree = "<group>";
@@ -240,15 +252,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1CDC722CDBF5EE00D63AC6 /* ColorPickerPresenter.swift in Sources */,
+				BBE065AF2D011BA200B1AD9E /* WishStoringRouter.swift in Sources */,
 				BB1CDC7E2CDCD66E00D63AC6 /* ToggleButton.swift in Sources */,
+				BBE065AD2D011B4900B1AD9E /* WishStoringInteractor.swift in Sources */,
 				BB1CDC542CDBE99D00D63AC6 /* AppDelegate.swift in Sources */,
 				BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */,
 				BBDEF1372CFFE2210095D825 /* AddWishCell.swift in Sources */,
 				BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */,
 				BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */,
-				BBDEF1332CFFBF310095D825 /* WishStoringViewController.swift in Sources */,
+				BBDEF1332CFFBF310095D825 /* WishStoringView.swift in Sources */,
 				BB1CDC762CDBF75200D63AC6 /* ColorPickerRouter.swift in Sources */,
+				BBE065B12D011BCF00B1AD9E /* WishEntity.swift in Sources */,
 				BB1CDC742CDBF68B00D63AC6 /* ColorPickerInteractor.swift in Sources */,
+				BBE065AB2D011B2700B1AD9E /* WishStoringPresenter.swift in Sources */,
 				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
 				BB1CDC692CDBF0E400D63AC6 /* ColorPickerView.swift in Sources */,
 				BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */,
