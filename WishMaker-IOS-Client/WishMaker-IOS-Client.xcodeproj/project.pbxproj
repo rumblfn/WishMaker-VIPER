@@ -22,6 +22,7 @@
 		BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */; };
 		BBDEF1332CFFBF310095D825 /* WishStoringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */; };
 		BBDEF1352CFFCC540095D825 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */; };
+		BBDEF1372CFFE2210095D825 /* AddWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1362CFFE2210095D825 /* AddWishCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickersConfiguration.swift; sourceTree = "<group>"; };
 		BBDEF1322CFFBF310095D825 /* WishStoringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringViewController.swift; sourceTree = "<group>"; };
 		BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
+		BBDEF1362CFFE2210095D825 /* AddWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				BB1CDC6F2CDBF57700D63AC6 /* CustomSlider.swift */,
 				BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */,
 				BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */,
+				BBDEF1362CFFE2210095D825 /* AddWishCell.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				BB1CDC7E2CDCD66E00D63AC6 /* ToggleButton.swift in Sources */,
 				BB1CDC542CDBE99D00D63AC6 /* AppDelegate.swift in Sources */,
 				BB1CDC702CDBF57700D63AC6 /* CustomSlider.swift in Sources */,
+				BBDEF1372CFFE2210095D825 /* AddWishCell.swift in Sources */,
 				BB1CDC562CDBE99D00D63AC6 /* SceneDelegate.swift in Sources */,
 				BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */,
 				BBDEF1332CFFBF310095D825 /* WishStoringViewController.swift in Sources */,
