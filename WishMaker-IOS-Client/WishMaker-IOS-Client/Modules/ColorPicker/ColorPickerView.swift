@@ -112,7 +112,12 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     
     @objc
     private func scheduleButtonPressed() {
-        
+        let wishCalendarViewController = WishCalendarViewController()
+        guard let navigationController = navigationController else {
+            print("Navigation controller is nil")
+            return
+        }
+        navigationController.pushViewController(wishCalendarViewController, animated: true)
     }
 }
 

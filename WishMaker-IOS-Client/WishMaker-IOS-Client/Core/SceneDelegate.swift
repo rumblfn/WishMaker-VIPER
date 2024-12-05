@@ -7,11 +7,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let ColorPickerController = ColorPickerRouter.createModule()
-        self.window?.rootViewController = ColorPickerController
+        window = UIWindow(windowScene: windowScene)
+        
+        let colorPickerController = ColorPickerRouter.createModule()
+        let navigationController = UINavigationController(rootViewController: colorPickerController)
+        
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

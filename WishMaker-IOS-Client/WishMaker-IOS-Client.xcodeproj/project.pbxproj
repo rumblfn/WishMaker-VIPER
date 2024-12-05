@@ -27,6 +27,7 @@
 		BBE065AD2D011B4900B1AD9E /* WishStoringInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065AC2D011B4900B1AD9E /* WishStoringInteractor.swift */; };
 		BBE065AF2D011BA200B1AD9E /* WishStoringRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065AE2D011BA200B1AD9E /* WishStoringRouter.swift */; };
 		BBE065B12D011BCF00B1AD9E /* WishEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065B02D011BCF00B1AD9E /* WishEntity.swift */; };
+		BBE065B42D017B1900B1AD9E /* WishCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE065B32D017B1900B1AD9E /* WishCalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BBE065AC2D011B4900B1AD9E /* WishStoringInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringInteractor.swift; sourceTree = "<group>"; };
 		BBE065AE2D011BA200B1AD9E /* WishStoringRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringRouter.swift; sourceTree = "<group>"; };
 		BBE065B02D011BCF00B1AD9E /* WishEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEntity.swift; sourceTree = "<group>"; };
+		BBE065B32D017B1900B1AD9E /* WishCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				BB1CDC7A2CDC23F200D63AC6 /* NavBar */,
 				BB1CDC792CDC23B300D63AC6 /* ColorPicker */,
+				BBE065B22D017AF000B1AD9E /* WishCalendar */,
 				BBDEF1312CFFBEF90095D825 /* WishStoring */,
 			);
 			path = Modules;
@@ -179,6 +182,14 @@
 				BBE065B02D011BCF00B1AD9E /* WishEntity.swift */,
 			);
 			path = WishStoring;
+			sourceTree = "<group>";
+		};
+		BBE065B22D017AF000B1AD9E /* WishCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				BBE065B32D017B1900B1AD9E /* WishCalendarView.swift */,
+			);
+			path = WishCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				BBE065B12D011BCF00B1AD9E /* WishEntity.swift in Sources */,
 				BB1CDC742CDBF68B00D63AC6 /* ColorPickerInteractor.swift in Sources */,
 				BBE065AB2D011B2700B1AD9E /* WishStoringPresenter.swift in Sources */,
+				BBE065B42D017B1900B1AD9E /* WishCalendarView.swift in Sources */,
 				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
 				BB1CDC692CDBF0E400D63AC6 /* ColorPickerView.swift in Sources */,
 				BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */,
