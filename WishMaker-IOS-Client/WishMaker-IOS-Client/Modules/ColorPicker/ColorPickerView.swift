@@ -31,10 +31,14 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         static let alphaSliderText: String = "Alpha"
         
         static let buttonHeight: CGFloat = 60
-        static let buttonBottom: CGFloat = 40
-        static let buttonSide: CGFloat = 20
-        static let buttonText: String = "Add wish"
         static let buttonRadius: CGFloat = 20
+        
+        static let wishButtonText: String = "Add wish"
+        static let scheduleButtonText: String = "Schedule wish granting"
+        
+        static let spacing: CGFloat = 20
+        static let stackBottom: CGFloat = 40
+        static let stackLeading: CGFloat = 20
     }
     
     var presenter: ColorPickerPresenterProtocol?
@@ -50,6 +54,9 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     private var sliderAlpha: CustomSlider!
     
     private let addWishButton: UIButton = UIButton(type: .system)
+    private let scheduleWishesButton: UIButton = UIButton(type: .system)
+    
+    private let actionStack: UIStackView = UIStackView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,13 +105,18 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         let wishModule = WishStoringRouter.createModule()
         present(wishModule, animated: true)
     }
+    
+    @objc
+    private func scheduleButtonPressed() {
+        
+    }
 }
 
 extension ColorPickerViewController {
     private func configureUI() {
         configureTitle()
         configureDescription()
-        configureAddWishButton()
+        configureActionStack()
         configureSliders()
         configureButtons()
     }
@@ -169,17 +181,13 @@ extension ColorPickerViewController {
     }
     
     private func configureAddWishButton() {
-        view.addSubview(addWishButton)
-        addWishButton.setHeight(Constants.buttonHeight)
-        addWishButton.pinBottom(to: view, Constants.buttonBottom)
-        addWishButton.pinHorizontal(to: view, Constants.buttonSide)
-        
-        addWishButton.backgroundColor = .white
-        addWishButton.setTitleColor(.systemPink, for: .normal)
-        addWishButton.setTitle(Constants.buttonText, for: .normal)
-
-        addWishButton.layer.cornerRadius = Constants.buttonRadius
+        addWishButton.setTitle(Constants.wishButtonText, for: .normal)
         addWishButton.addTarget(self, action: #selector(addWishButtonPressed), for: .touchUpInside)
+    }
+    
+    private func configureScheduleMissions() {
+        scheduleWishesButton.setTitle(Constants.scheduleButtonText, for: .normal)
+        scheduleWishesButton.addTarget(self, action: #selector(scheduleButtonPressed), for: .touchUpInside)
     }
     
     private func configureSliders() {
@@ -210,7 +218,28 @@ extension ColorPickerViewController {
         
         slidersStack.pinCenterX(to: view)
         slidersStack.pinLeft(to: view, Constants.stackLeadingMargin)
-        slidersStack.pinBottom(to: addWishButton.topAnchor, Constants.stackBottomMargin)
+        slidersStack.pinBottom(to: actionStack.topAnchor, Constants.stackBottomMargin)
+    }
+    
+    private func configureActionStack() {
+        actionStack.axis = .vertical
+        view.addSubview(actionStack)
+        actionStack.spacing = Constants.spacing
+        
+        for button in [addWishButton, scheduleWishesButton] {
+            actionStack.addArrangedSubview(button)
+            
+            button.setHeight(Constants.buttonHeight)
+            button.backgroundColor = .white
+            button.setTitleColor(.systemPink, for: .normal)
+            button.layer.cornerRadius = Constants.buttonRadius
+        }
+        
+        configureAddWishButton()
+        configureScheduleMissions()
+        
+        actionStack.pinBottom(to: view, Constants.stackBottom)
+        actionStack.pinHorizontal(to: view, Constants.stackLeading)
     }
 }
 
