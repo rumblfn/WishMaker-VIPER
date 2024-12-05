@@ -222,13 +222,14 @@ extension ColorPickerViewController {
     }
     
     private func configureActionStack() {
+        actionStack.translatesAutoresizingMaskIntoConstraints = false
         actionStack.axis = .vertical
         view.addSubview(actionStack)
         actionStack.spacing = Constants.spacing
         
         for button in [addWishButton, scheduleWishesButton] {
+            button.translatesAutoresizingMaskIntoConstraints = false
             actionStack.addArrangedSubview(button)
-            
             button.setHeight(Constants.buttonHeight)
             button.backgroundColor = .white
             button.setTitleColor(.systemPink, for: .normal)
