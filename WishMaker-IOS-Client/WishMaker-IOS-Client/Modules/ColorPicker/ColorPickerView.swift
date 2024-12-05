@@ -35,6 +35,7 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         
         static let wishButtonText: String = "Add wish"
         static let scheduleButtonText: String = "Schedule wish granting"
+        static let buttonFontSize: CGFloat = 18
         
         static let spacing: CGFloat = 20
         static let stackBottom: CGFloat = 40
@@ -55,7 +56,6 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
     
     private let addWishButton: UIButton = UIButton(type: .system)
     private let scheduleWishesButton: UIButton = UIButton(type: .system)
-    
     private let actionStack: UIStackView = UIStackView()
     
     override func viewDidLoad() {
@@ -77,6 +77,10 @@ final class ColorPickerViewController: UIViewController, ColorPickerViewProtocol
         sliderGreen.slider.value = Float(green)
         sliderBlue.slider.value = Float(blue)
         sliderAlpha.slider.value = Float(alpha)
+        
+        // TODO: Will be resolved in future refactorings.
+        addWishButton.setTitleColor(color, for: .normal)
+        scheduleWishesButton.setTitleColor(color, for: .normal)
     }
     
     func updateColorPickers(_ state: [ColorPickerMenu: Bool]) {
@@ -158,7 +162,7 @@ extension ColorPickerViewController {
         buttonsStack.translatesAutoresizingMaskIntoConstraints = false
         buttonsStack.axis = .horizontal
         buttonsStack.distribution = .fillProportionally
-        buttonsStack.spacing = 10
+        buttonsStack.spacing = Constants.spacing
         scrollView.addSubview(buttonsStack)
         
         scrollView.contentSize = CGSize(width: buttonsStack.frame.size.width, height: buttonsStack.frame.size.height)
@@ -234,6 +238,7 @@ extension ColorPickerViewController {
             button.backgroundColor = .white
             button.setTitleColor(.systemPink, for: .normal)
             button.layer.cornerRadius = Constants.buttonRadius
+            button.titleLabel?.font = UIFont.systemFont(ofSize: Constants.buttonFontSize)
         }
         
         configureAddWishButton()

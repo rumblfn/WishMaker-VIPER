@@ -1,6 +1,6 @@
 import UIKit
 
-struct ColorPicker {
+struct ColorPicker: Codable {
     enum Constants {
         static let lowerBound: Float = 0.0
         static let upperBound: Float = 1.0
