@@ -8,6 +8,10 @@ class WishCalendarViewController: UIViewController {
     enum Constants {
         static let contentInset: UIEdgeInsets = UIEdgeInsets()
         static let collectionTop: CGFloat = 10
+        static let cornerRadius: CGFloat = 20
+        static let buttonFontSize: CGFloat = 14
+        static let creationButtonText: String = "Добавить"
+        
     }
     
     var presenter: WishCalendarPresenterProtocol!
@@ -17,11 +21,28 @@ class WishCalendarViewController: UIViewController {
         collectionViewLayout: UICollectionViewFlowLayout()
     )
     
+    private let wishCreationButton: UIButton = UIButton(type: .system)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         configureCollection()
+        configureCreationButton()
         presenter.viewDidLoad()
+    }
+    
+    private func configureCreationButton() {
+        wishCreationButton.translatesAutoresizingMaskIntoConstraints = false
+        wishCreationButton.layer.cornerRadius = Constants.cornerRadius
+        wishCreationButton.titleLabel?.font = UIFont.systemFont(ofSize: Constants.buttonFontSize)
+        wishCreationButton.setTitle(Constants.creationButtonText, for: .normal)
+        wishCreationButton.addTarget(self, action: #selector(creationButtonPressed), for: .touchUpInside)
+        wishCreationButton.backgroundColor = .systemRed
+        view.addSubview(wishCreationButton)
+        wishCreationButton.pinTop(to: view.safeAreaLayoutGuide.topAnchor, 16)
+        wishCreationButton.pinRight(to: view.safeAreaLayoutGuide.trailingAnchor, 16)
+        wishCreationButton.setWidth(mode: .equal, 100)
+        wishCreationButton.setHeight(mode: .equal, 50)
     }
     
     private func configureCollection() {
@@ -36,6 +57,12 @@ class WishCalendarViewController: UIViewController {
         collectionView.pinHorizontal(to: view)
         collectionView.pinBottom(to: view.safeAreaLayoutGuide.bottomAnchor)
         collectionView.pinTop(to: view.safeAreaLayoutGuide.topAnchor, Constants.collectionTop)
+    }
+    
+    @objc
+    private func creationButtonPressed() {
+        let wishCreationModule = WishEventCreationRouter.createModule()
+        present(wishCreationModule, animated: true)
     }
 }
 

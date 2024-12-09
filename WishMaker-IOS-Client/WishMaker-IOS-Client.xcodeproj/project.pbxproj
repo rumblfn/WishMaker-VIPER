@@ -20,6 +20,9 @@
 		BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */; };
 		BB1CDC7E2CDCD66E00D63AC6 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */; };
 		BB1CDC812CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */; };
+		BBC97EB32D06FE6400DAC8A6 /* WishEventCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC97EB22D06FE6400DAC8A6 /* WishEventCreationView.swift */; };
+		BBC97EB52D07011A00DAC8A6 /* WishEventCreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC97EB42D07011A00DAC8A6 /* WishEventCreationPresenter.swift */; };
+		BBC97EB72D0702FF00DAC8A6 /* WishEventCreationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC97EB62D0702FF00DAC8A6 /* WishEventCreationRouter.swift */; };
 		BBDEF1332CFFBF310095D825 /* WishStoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1322CFFBF310095D825 /* WishStoringView.swift */; };
 		BBDEF1352CFFCC540095D825 /* WrittenWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */; };
 		BBDEF1372CFFE2210095D825 /* AddWishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDEF1362CFFE2210095D825 /* AddWishCell.swift */; };
@@ -51,6 +54,9 @@
 		BB1CDC7B2CDCB33000D63AC6 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		BB1CDC7D2CDCD66E00D63AC6 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickersConfiguration.swift; sourceTree = "<group>"; };
+		BBC97EB22D06FE6400DAC8A6 /* WishEventCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEventCreationView.swift; sourceTree = "<group>"; };
+		BBC97EB42D07011A00DAC8A6 /* WishEventCreationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEventCreationPresenter.swift; sourceTree = "<group>"; };
+		BBC97EB62D0702FF00DAC8A6 /* WishEventCreationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEventCreationRouter.swift; sourceTree = "<group>"; };
 		BBDEF1322CFFBF310095D825 /* WishStoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishStoringView.swift; sourceTree = "<group>"; };
 		BBDEF1342CFFCC540095D825 /* WrittenWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrittenWishCell.swift; sourceTree = "<group>"; };
 		BBDEF1362CFFE2210095D825 /* AddWishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishCell.swift; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				BB1CDC7A2CDC23F200D63AC6 /* NavBar */,
+				BBC97EB12D06FE4900DAC8A6 /* WishEventCreation */,
 				BB1CDC792CDC23B300D63AC6 /* ColorPicker */,
 				BBE065B22D017AF000B1AD9E /* WishCalendar */,
 				BBDEF1312CFFBEF90095D825 /* WishStoring */,
@@ -181,6 +188,16 @@
 				BB1CDC802CDCE6CB00D63AC6 /* ColorPickersConfiguration.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		BBC97EB12D06FE4900DAC8A6 /* WishEventCreation */ = {
+			isa = PBXGroup;
+			children = (
+				BBC97EB22D06FE6400DAC8A6 /* WishEventCreationView.swift */,
+				BBC97EB42D07011A00DAC8A6 /* WishEventCreationPresenter.swift */,
+				BBC97EB62D0702FF00DAC8A6 /* WishEventCreationRouter.swift */,
+			);
+			path = WishEventCreation;
 			sourceTree = "<group>";
 		};
 		BBDEF1312CFFBEF90095D825 /* WishStoring */ = {
@@ -297,7 +314,10 @@
 				BBE065BE2D01B40D00B1AD9E /* WishCalendarRouter.swift in Sources */,
 				BBE065B42D017B1900B1AD9E /* WishCalendarView.swift in Sources */,
 				BBE065B62D01AFA500B1AD9E /* WishEventCell.swift in Sources */,
+				BBC97EB72D0702FF00DAC8A6 /* WishEventCreationRouter.swift in Sources */,
+				BBC97EB32D06FE6400DAC8A6 /* WishEventCreationView.swift in Sources */,
 				BB1CDC6D2CDBF14900D63AC6 /* ViewPin.swift in Sources */,
+				BBC97EB52D07011A00DAC8A6 /* WishEventCreationPresenter.swift in Sources */,
 				BB1CDC692CDBF0E400D63AC6 /* ColorPickerView.swift in Sources */,
 				BB1CDC7C2CDCB33000D63AC6 /* ColorPicker.swift in Sources */,
 				BBDEF1352CFFCC540095D825 /* WrittenWishCell.swift in Sources */,
